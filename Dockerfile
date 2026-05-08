@@ -3,6 +3,8 @@ WORKDIR /src
 
 # Копируем файл проекта и восстанавливаем зависимости
 COPY BatchAPI.csproj .
+ENV DOTNET_SKIP_FIRST_TIME_EXPERIENCE=true
+ENV NUGET_XMLDOC_MODE=skip
 RUN dotnet restore "BatchAPI.csproj"
 
 # Копируем ВСЕ остальные файлы проекта
