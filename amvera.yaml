@@ -1,4 +1,5 @@
 meta:
+  environment: dotnet-sdk
   toolchain:
     name: docker
     from: Dockerfile
