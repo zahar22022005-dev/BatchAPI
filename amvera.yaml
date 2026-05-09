@@ -1,0 +1,13 @@
+meta:
+  environment: dotnet
+  toolchain:
+    name: docker
+    from: Dockerfile
+
+build:
+  docker:
+    file: Dockerfile
+
+deploy:
+  docker:
+    direct: true
