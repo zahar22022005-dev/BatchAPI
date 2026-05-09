@@ -25,10 +25,8 @@ public class BatchController : ControllerBase
     {
         if (string.IsNullOrWhiteSpace(newBatch.ProductName))
             return BadRequest("ProductName is required");
-        
         if (newBatch.Quantity <= 0)
             return BadRequest("Quantity must be greater than 0");
-        
         if (newBatch.Price <= 0)
             return BadRequest("Price must be greater than 0");
 
