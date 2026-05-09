@@ -1,8 +1,8 @@
 meta:
-  environment: dotnet-sdk
+  environment: csharp
   toolchain:
-    name: docker
-    from: Dockerfile
+    name: dotnet
+    version: 8.0
 
 build:
   docker:
