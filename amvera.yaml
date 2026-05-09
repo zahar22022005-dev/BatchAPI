@@ -3,11 +3,3 @@ meta:
   toolchain:
     name: dotnet
     version: 10.0
-
-build:
-  docker:
-    file: Dockerfile
-
-deploy:
-  docker:
-    direct: true
